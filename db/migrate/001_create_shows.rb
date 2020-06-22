@@ -1,6 +1,10 @@
-
-
-string :name
-string :network
-string :day
-integer :rating
+class CreateShows < ActiveRecord::Migration
+  def change
+    create_table :shows do |t|
+      string :name
+      string :network
+      string :day
+      integer :rating
+    end
+  end
+end
